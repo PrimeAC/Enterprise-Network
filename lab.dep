@@ -1,0 +1,9 @@
+pc_conta1P pc_conta2P : routerP switchP
+pc_visit1P pc_visit2P : routerP
+
+pc_conta1L pc_conta2L : routerL switchL
+pc_visit1L pc_visit2L : routerL
+
+ficheirosS monitorS : switch_privadaS routerS
+pc_diretorS pc_contabilistaS pc_r_hS : switch_adminS routerS
+dns_emailS dns_httpS proxy_httpS: switch_publicaS routerS
