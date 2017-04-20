@@ -1,0 +1,14 @@
+$TTL 60000
+@		IN	SOA	dnsISP.gsr.
+root.dnsIPS.gsr. (
+		2017042001 ; serial
+		28800 ; refresh
+		14400 ; retry
+		3600000 ; expire
+		0 ; negative cache ttl
+		)
+@		IN	NS	dnsISP.gsr.
+dnsISP		IN	A	10.0.0.17
+
+bomcliente	IN	NS	dnsE.bomcliente.gsr.
+dnsE.bomcliente	IN	A	10.0.0.2
