@@ -7,7 +7,7 @@ root.dnsIPS.gsr. (
 		3600000 ; expire
 		0 ; negative cache ttl
 		)
-@		IN	NS	dnsISP.gsr.
+@			IN	NS	dnsISP.gsr.
 dnsISP		IN	A	10.0.0.17
 
 bomcliente	IN	NS	dnsE.bomcliente.gsr.
