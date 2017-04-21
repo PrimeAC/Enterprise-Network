@@ -23,7 +23,7 @@
 
 
 gsr			IN      NS      dnsISP.gsr.
-dnsISP.gsr.			IN	A	10.0.0.17
+dnsISP.gsr.		IN	A	10.0.0.17
 
 
 
