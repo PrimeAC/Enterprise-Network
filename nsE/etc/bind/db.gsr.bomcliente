@@ -1,12 +1,12 @@
 $TTL	60000
-@		IN	SOA	dnsE.bomcliente.gsr.
-root.dnsE.bomcliente.gsr. (
+@		IN	SOA	nsE.bomcliente.gsr.
+root.nsE.bomcliente.gsr. (
 			2017042001 ; serial
 			28 ; refresh
 			14 ; retry
 			3600000 ; expire
 			0 ; negative cache ttl
 			)
-@			IN	NS	dnsE.bomcliente.gsr.
-dnsE		IN	A	10.0.0.2
+@			IN	NS	nsE.bomcliente.gsr.
+nsE		IN	A	10.0.0.2
 pc_clienteE	IN	A	10.0.0.1
