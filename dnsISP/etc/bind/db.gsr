@@ -1,6 +1,5 @@
 $TTL 60000
-@		IN	SOA	dnsISP.gsr.
-root.dnsIPS.gsr. (
+@		IN	SOA	dnsISP.gsr.	root.dnsIPS.gsr. (
 		2017042001 ; serial
 		28800 ; refresh
 		14400 ; retry
