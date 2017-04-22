@@ -14,7 +14,7 @@
 ;
 ; formerly NS.INTERNIC.NET
 ;
-.			 	   IN  NS    dnsRoot.
+.			   IN  NS	 dnsRoot.
 dnsRoot.		   IN  A	 10.0.0.17
 ;
 ;
