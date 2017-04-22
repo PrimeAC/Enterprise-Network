@@ -1,9 +1,16 @@
-pc_conta1P pc_conta2P : routerP switchP
-pc_visit1P pc_visit2P : routerP
+pcConta1P pcConta2P : routerP switchP
+pcVisit1P pcVisit2P : routerP
 
-pc_conta1L pc_conta2L : routerL switchL
-pc_visit1L pc_visit2L : routerL
+pcConta1L pcConta2L : routerL switchL
+pcVisit1L pcVisit2L : routerL
 
-ficheirosS monitorS : switch_privadaS routerS
-pc_diretorS pc_contabilistaS pc_r_hS : switch_adminS routerS
-dns_emailS dns_httpS proxy_httpS: switch_publicaS routerS
+ficheirosS monitorS : switchPrivadaS routerS
+pcDiretorS pcContabilistaS pcRHS : switchAdminS routerS
+ns1S ns2S proxyS: switchPublicaS routerS
+
+pcVisit1L pcVisit2L : routerL
+pcVisit1P pcVisit2P : routerP
+
+pcClienteE : nsE routerE
+
+dnsISP : routerISP 

@@ -8,4 +8,4 @@ $TTL	60000
 			)
 @		IN	NS	nsE.bomcliente.gsr.
 nsE		IN	A	10.0.0.2
-pc_clienteE	IN	A	10.0.0.1
+pcClienteE	IN	A	10.0.0.1
