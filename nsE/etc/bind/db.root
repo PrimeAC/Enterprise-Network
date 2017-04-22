@@ -14,8 +14,8 @@
 ;
 ; formerly NS.INTERNIC.NET
 ;
-.			   IN  NS	 dnsRoot.
-dnsRoot.		   IN  A	 10.0.0.17
+.			   IN  NS	 dnsISP.gsr.
+dnsISP.gsr.		   IN  A	 10.0.0.17
 ;
 ;
 ;.                        3600000  IN  NS    A.ROOT-SERVERS.NET.

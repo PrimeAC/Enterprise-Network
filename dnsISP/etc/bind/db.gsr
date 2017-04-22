@@ -10,5 +10,5 @@ root.dnsIPS.gsr. (
 @		IN	NS	dnsISP.gsr.
 dnsISP		IN	A	10.0.0.17
 
-bomcliente	IN	NS	dnsE.bomcliente.gsr.
-dnsE.bomcliente	IN	A	10.0.0.2
+bomcliente	IN	NS	nsE.bomcliente.gsr.
+nsE.bomcliente	IN	A	10.0.0.2
