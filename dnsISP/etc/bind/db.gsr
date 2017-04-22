@@ -11,3 +11,8 @@ dnsISP		IN	A	10.0.0.17
 
 bomcliente	IN	NS	nsE.bomcliente.gsr.
 nsE.bomcliente	IN	A	10.0.0.2
+
+contatudo	IN	NS	ns1S.contatudo.gsr.
+contatudo	IN	NS	ns2S.contatudo.gsr.
+ns1S.contatudo	IN	A	10.0.0.145
+ns2S.contatudo	IN	A	10.0.0.146
