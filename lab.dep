@@ -1,7 +1,7 @@
-pcConta1P pcConta2P : routerP switchP
+pcContabilista1P pcContabilista2P : routerP switchP
 pcVisit1P pcVisit2P : routerP
 
-pcConta1L pcConta2L : routerL switchL
+pcContabilista1L pcContabilista2L : routerL switchL
 pcVisit1L pcVisit2L : routerL
 
 ficheirosS monitorS : switchPrivadaS routerS
