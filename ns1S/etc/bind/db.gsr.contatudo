@@ -35,3 +35,10 @@ pcVisit7P		IN	A	10.0.0.183
 pcVisit8P		IN	A	10.0.0.184
 pcVisit9P		IN	A	10.0.0.185
 pcVisit10P		IN	A	10.0.0.186
+
+
+@			IN	MX 5	mail.contatudo.gsr.
+
+imap		IN	A	10.0.0.145
+pop			IN	A	10.0.0.145
+mail		IN 	A 	10.0.0.145
