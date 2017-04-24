@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+        ServerAdmin webmaster@bomcliente.gsr
+        ServerName  www.bomcliente.gsr
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.html
+        DocumentRoot /var/www/www.bomcliente.gsr/
+
+</VirtualHost>

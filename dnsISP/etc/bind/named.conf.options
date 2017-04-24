@@ -1,3 +1,10 @@
+# Trusted networks
+acl "trusted" {
+	localhost;
+	localnets;
+	10.0.0.0/29;
+};
+
 options {
 	directory "/var/cache/bind";
 	recursion yes;
