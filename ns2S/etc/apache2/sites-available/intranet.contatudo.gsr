@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+        ServerAdmin webmaster@contatudo.gsr
+        ServerName  intranet.contatudo.gsr
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.html
+        DocumentRoot /var/www/intranet.contatudo.gsr/
+
+</VirtualHost>
