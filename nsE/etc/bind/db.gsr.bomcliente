@@ -6,6 +6,12 @@ $TTL	60000
 			3600000 ; expire
 			0 ; negative cache ttl
 			)
-@		IN	NS	nsE.bomcliente.gsr.
-nsE		IN	A	10.0.0.2
+@			IN	NS	nsE.bomcliente.gsr.
+@			IN	MX 5	mail.bomcliente.gsr.
+
+nsE			IN	A	10.0.0.2
 pcClienteE	IN	A	10.0.0.1
+
+imap		IN	A	10.0.0.2
+pop			IN	A	10.0.0.2
+mail		IN 	A 	10.0.0.2
