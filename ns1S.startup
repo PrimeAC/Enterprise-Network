@@ -9,8 +9,16 @@ chmod a+w /var/spool/mail
 # loose permissions
 chmod go-rw /etc/exim4/exim4.conf
 
+adduser --disabled-password --gecos "" contabilista
+echo 'contabilista:pass' | chpasswd
+
+adduser --disabled-password --gecos "" diretor
+echo 'diretor:pass' | chpasswd
+
+adduser --disabled-password --gecos "" rh
+echo 'rh:pass' | chpasswd
+
 /etc/init.d/bind start
 /etc/init.d/exim4 start
 /etc/init.d/inetd start
-
 
