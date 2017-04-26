@@ -13,20 +13,20 @@
 # Lines beginning with "#" are comments, and ignored by Pine.
 
 # Over-rides your full name from Unix password file. Required for PC-Pine.
-personal-name=Root user on PC1
+personal-name=Root user on pcContabilistaS
 
 # Sets domain part of From: and local addresses in outgoing mail.
-user-domain=lugroma3.org
+user-domain=contatudo.gsr
 
 # List of SMTP servers for sending mail. If blank: Unix Pine uses sendmail.
-smtp-server=mail.lugroma3.org
+smtp-server=mail.contatudo.gsr
 
 # NNTP server for posting news. Also sets news-collections for news reading.
 nntp-server=
 
 # Path of (local or remote) INBOX, e.g. ={mail.somewhere.edu}inbox
 # Normal Unix default is the local INBOX (usually /usr/spool/mail/$USER).
-inbox-path={imap.lugroma3.org/user=guest}inbox
+inbox-path={imap.contatudo.gsr/user=contabilista}inbox
 
 # List of folder pairs; the first indicates a folder to archive, and the
 # second indicates the folder read messages in the first should
@@ -77,7 +77,7 @@ initial-keystroke-list=
 default-composer-hdrs=
 
 # Add these customized headers (and possible default values) when composing
-customized-hdrs=Reply-To: guest@lugroma3.org
+customized-hdrs=Reply-To: contabilista@contatudo.gsr
 
 # When viewing messages, include this list of headers
 viewer-hdrs=
