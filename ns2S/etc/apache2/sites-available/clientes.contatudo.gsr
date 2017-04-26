@@ -5,5 +5,4 @@
         # Indexes + Directory Root.
         DirectoryIndex index.html
         DocumentRoot /var/www/clientes.contatudo.gsr/
-
 </VirtualHost>

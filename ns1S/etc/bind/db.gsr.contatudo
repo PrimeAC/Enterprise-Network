@@ -36,6 +36,10 @@ pcVisit8P		IN	A	10.0.0.184
 pcVisit9P		IN	A	10.0.0.185
 pcVisit10P		IN	A	10.0.0.186
 
+www			IN	A	10.0.0.146
+intranet		IN	A	10.0.0.146
+clientes		IN	A	10.0.0.146
+
 
 @			IN	MX 5	mail.contatudo.gsr.
 
