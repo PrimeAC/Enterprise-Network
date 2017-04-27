@@ -9,14 +9,32 @@ chmod a+w /var/spool/mail
 # loose permissions
 chmod go-rw /etc/exim4/exim4.conf
 
-adduser --disabled-password --gecos "" contabilista
-echo 'contabilista:pass' | chpasswd
+adduser --disabled-password --gecos "" contabilidade
+echo 'contabilidade:pass' | chpasswd
 
 adduser --disabled-password --gecos "" diretor
 echo 'diretor:pass' | chpasswd
 
 adduser --disabled-password --gecos "" rh
 echo 'rh:pass' | chpasswd
+
+adduser --disabled-password --gecos "" lisboa
+echo 'lisboa:pass' | chpasswd
+
+adduser --disabled-password --gecos "" lisboa-contab1
+echo 'lisboa-contab1:pass' | chpasswd
+
+adduser --disabled-password --gecos "" lisboa-contab2
+echo 'lisboa-contab2:pass' | chpasswd
+
+adduser --disabled-password --gecos "" porto
+echo 'porto:pass' | chpasswd
+
+adduser --disabled-password --gecos "" porto-contab1
+echo 'porto-contab1:pass' | chpasswd
+
+adduser --disabled-password --gecos "" porto-contab2
+echo 'porto-contab2:pass' | chpasswd
 
 /etc/init.d/bind start
 /etc/init.d/exim4 start
