@@ -1,15 +1,18 @@
-pcContabilista1P pcContabilista2P : routerP switchP
-pcVisit1P pcVisit2P : routerP
+pcContabilista1P : routerP switchP
+pcContabilista2P : routerP switchP pcContabilista1P
+pcVisit1P : routerP
+pcVisit2P : routerP pcVisit1P
 
-pcContabilista1L pcContabilista2L : routerL switchL
-pcVisit1L pcVisit2L : routerL
+pcContabilista1L : routerL switchL
+pcContabilista2L : routerL switchL pcContabilista1L
+pcVisit1L : routerL
+pcVisit2L : routerL pcVisit1L
 
 ficheirosS monitorS : switchPrivadaS routerS
-pcDiretorS pcContabilistaS pcRHS : switchAdminS routerS
+pcContabilistaS : switchAdminS routerS pcDiretorS
+pcRHS : switchAdminS routerS pcDiretorS pcContabilistaS
+pcDiretorS : switchAdminS routerS
 ns1S ns2S proxyS: switchPublicaS routerS
-
-pcVisit1L pcVisit2L : routerL
-pcVisit1P pcVisit2P : routerP
 
 pcClienteE : nsE routerE
 
