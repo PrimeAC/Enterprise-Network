@@ -8,3 +8,5 @@ ip route add 10.0.0.128/26 via 10.0.0.21
 ip route add 10.0.2.64/26 via 10.0.0.21
 ip route add 10.0.0.0/28 via 10.0.0.25
 
+iptables -t nat -A POSTROUTING -o eth3 -j MASQUERADE
+
