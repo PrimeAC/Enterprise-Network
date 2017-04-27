@@ -1,0 +1,8 @@
+#fica no /etc/rc.local do pc
+echo 1 > /proc/sys/net/ip4/ip_forwarding
+iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+
+#executar no terminal do pc antes de lançar o netkit em que nk_tap_bruno é o nome da interface ligada ao tap
+sudo route add -net 10.0.2.64/26 gw 192.168.100.1 dev nk_tap_bruno
+sudo route add -net 10.0.0.128/26 gw 192.168.100.1 dev nk_tap_bruno
+sudo route add -net 10.0.0.0/25 gw 192.168.100.1 dev nk_tap_bruno
