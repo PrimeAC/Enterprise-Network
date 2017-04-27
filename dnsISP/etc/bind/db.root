@@ -13,19 +13,7 @@ gsr.			IN      NS      dnsISP.gsr.
 dnsISP.gsr.		IN	A	10.0.0.17
 
 .			86400	IN	RRSIG	SOA 8 0 86400 20160529050000 20160519040000 60615 . cOR7sb07Y2mtdM6t3v+xY8bzL9EVs9y0GQ8Vep/h8AS9xNh7X/sN9JEFGF32pyTjkE8HWddtQR/ubLeNL3I0MOJqTdrY3rHOFE92mtUuLv2C9Fv0d9QDH0ykuH8w9+Hai+wqfLXV7f2J8M7Vd/tRWLfRwjwEoH3BdwFwPe/ctXg=
-.			518400	IN	NS	a.root-servers.net.
-.			518400	IN	NS	b.root-servers.net.
-.			518400	IN	NS	c.root-servers.net.
-.			518400	IN	NS	d.root-servers.net.
-.			518400	IN	NS	e.root-servers.net.
-.			518400	IN	NS	f.root-servers.net.
-.			518400	IN	NS	g.root-servers.net.
-.			518400	IN	NS	h.root-servers.net.
-.			518400	IN	NS	i.root-servers.net.
-.			518400	IN	NS	j.root-servers.net.
-.			518400	IN	NS	k.root-servers.net.
-.			518400	IN	NS	l.root-servers.net.
-.			518400	IN	NS	m.root-servers.net.
+
 .			518400	IN	RRSIG	NS 8 0 518400 20160529050000 20160519040000 60615 . bP9EYMKoP9XDKEarIqrxNpn+BZnmwKyKu/wTKdleIRpHGTDv/UE4Blq3Xy8ykSbZOQQQy2pqjTJFw/NplD7AcngcYuDp29WrV1q3w2QYqQgvjRkbhIP8iGBsekRhmkWMajdhVsFU3pgjbFzLq6H7ux3lDBYb6zRTf6yRoUdZpfs=
 .			86400	IN	NSEC	aaa. NS SOA RRSIG NSEC DNSKEY
 .			86400	IN	RRSIG	NSEC 8 0 86400 20160529050000 20160519040000 60615 . DUEa+cHL8LNk9JuTXqK9U7IRkscBzX0qZsR1Hd3S9ylCzDz3ult0rIWgzi4DAmCBCUfJ7UjyiGCWNuXZpb6NVcnUiHt24eZKoZBKiv3D4FcShRS2f+I8iPlUQP/5vVUrKg+CAlp7mbMXK8WIZFwbeVSdQ77/hO57y/xFt+hQ3uM=
