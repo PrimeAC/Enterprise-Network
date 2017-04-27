@@ -1,8 +1,8 @@
 ip addr add dev eth0 10.0.0.146/28
 ip link set dev eth0 up
-ip route add default via 10.0.0.148
+ip route add 0.0.0.0/0 via 10.0.0.148
 
-a2dissite 000-default
+a2dissite 000-0.0.0.0/0
 a2ensite www.contatudo.gsr
 a2ensite intranet.contatudo.gsr
 a2ensite clientes.contatudo.gsr
