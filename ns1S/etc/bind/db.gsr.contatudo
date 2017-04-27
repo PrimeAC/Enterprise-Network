@@ -8,6 +8,7 @@ $TTL	60000
 			)
 @			IN	NS	ns1S.contatudo.gsr.
 ns1S			IN	A	10.0.0.145
+ns2S			IN	A	10.0.0.146
 pcDiretorS		IN	A	10.0.0.130
 pcContabilistaS		IN	A	10.0.0.131
 pcRHS			IN	A	10.0.0.132

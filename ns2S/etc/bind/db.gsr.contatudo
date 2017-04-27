@@ -7,7 +7,8 @@ $TTL	60000
 			0 ; negative cache ttl
 			)
 @			IN	NS	ns2S.contatudo.gsr.
-ns2S			IN	A	10.0.0.145
+ns2S			IN	A	10.0.0.146
+ns1S			IN	A	10.0.0.145
 pcDiretorS		IN	A	10.0.0.130
 pcContabilistaS		IN	A	10.0.0.131
 pcRHS			IN	A	10.0.0.132
