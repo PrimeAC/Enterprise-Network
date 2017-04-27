@@ -8,13 +8,13 @@ $TTL	60000
 			)
 @			IN	NS	ns1S.contatudo.gsr.
 ns1S			IN	A	10.0.0.145
-pcDiretorS		IN	A	10.0.0.129
-pcContabilistaS		IN	A	10.0.0.130
-pcRHS			IN	A	10.0.0.131
-pcContabilista1L	IN	A	192.168.0.9
-pcContabilista2L	IN	A	192.168.0.10
-pcContabilista1P	IN	A	192.168.0.17
-pcContabilista2P	IN	A	192.168.0.18
+pcDiretorS		IN	A	10.0.0.130
+pcContabilistaS		IN	A	10.0.0.131
+pcRHS			IN	A	10.0.0.132
+pcContabilista1L	IN	A	192.168.0.10
+pcContabilista2L	IN	A	192.168.0.11
+pcContabilista1P	IN	A	192.168.0.18
+pcContabilista2P	IN	A	192.168.0.19
 pcVisit1L		IN	A	10.0.0.161
 pcVisit2L		IN	A	10.0.0.162
 pcVisit3L		IN	A	10.0.0.163
@@ -35,6 +35,10 @@ pcVisit7P		IN	A	10.0.0.183
 pcVisit8P		IN	A	10.0.0.184
 pcVisit9P		IN	A	10.0.0.185
 pcVisit10P		IN	A	10.0.0.186
+
+www			IN	A	10.0.0.146
+intranet		IN	A	10.0.0.146
+clientes		IN	A	10.0.0.146
 
 
 @			IN	MX 5	mail.contatudo.gsr.

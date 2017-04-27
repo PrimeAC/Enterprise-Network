@@ -9,8 +9,10 @@ $TTL	60000
 @			IN	NS	nsE.bomcliente.gsr.
 @			IN	MX 5	mail.bomcliente.gsr.
 
-nsE			IN	A	10.0.0.2
+nsE		IN	A	10.0.0.2
 pcClienteE	IN	A	10.0.0.1
+
+www		IN	A	10.0.0.2
 
 imap		IN	A	10.0.0.2
 pop			IN	A	10.0.0.2
