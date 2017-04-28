@@ -1,4 +1,5 @@
 #fica no /etc/rc.local do pc
+
 echo 1 > /proc/sys/net/ipv4/ip_forwarding
 
 iptables --table nat --append POSTROUTING --out-interface wlan0 -j MASQUERADE
@@ -7,6 +8,7 @@ iptables --append FORWARD --in-interface nk_tap_bruno -j ACCEPT
 
 #descomentar /etc/sysctl.conf 
 net.ipv4.ip_forward=1
+
 
 #executar no terminal do pc antes de lançar o netkit em que nk_tap_bruno é o nome da interface ligada ao tap
 sudo route add -net 10.0.2.64/26 gw 192.168.100.1 dev nk_tap_bruno
