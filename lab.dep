@@ -17,3 +17,5 @@ ns1S ns2S proxyS: switchPublicaS routerS
 pcClienteE : nsE routerE
 
 dnsISP : routerISP 
+
+monitorS : ficheirosS ns1S ns2S proxyS routerS routerP routerL
