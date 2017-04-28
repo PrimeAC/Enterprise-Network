@@ -1,5 +1,5 @@
 ip addr add dev eth0 10.0.0.147/28
 ip link set dev eth0 up
-ip route add default via 10.0.0.148
+ip route add 0.0.0.0/0 via 10.0.0.148
 /etc/init.d/snmpd start
 
