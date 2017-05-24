@@ -11,3 +11,9 @@ echo 'ftpuser2:pass' | chpasswd
 
 /etc/init.d/snmpd start
 /etc/init.d/proftpd start
+
+adduser -d /home/user user
+echo 'user:pass' | chpasswd
+
+dpkg -i /hostlab/sudo_1.6.9p17-3_i386.deb
+/etc/init.d/ssh start

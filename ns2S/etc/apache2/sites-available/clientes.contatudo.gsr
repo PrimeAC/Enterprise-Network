@@ -1,8 +1,19 @@
 <VirtualHost *:80>
-        ServerAdmin webmaster@contatudo.gsr
-        ServerName  clientes.contatudo.gsr
+	ServerAdmin 	webmaster@contatudo.gsr
+	ServerName		clientes.contatudo.gsr
+	ServerAlias		clientes.contatudo.gsr
+	Redirect permanent / https://clientes.contatudo.gsr
+</VirtualHost>
 
-        # Indexes + Directory Root.
-        DirectoryIndex index.html
-        DocumentRoot /var/www/clientes.contatudo.gsr/
+<VirtualHost *:443>
+    ServerAdmin 	webmaster@contatudo.gsr
+	ServerName		clientes.contatudo.gsr
+	ServerAlias		clientes.contatudo.gsr
+
+	# Indexes + Directory Root.
+    DirectoryIndex index.html
+	DocumentRoot	/var/www/clientes.contatudo.gsr/
+	SSLEngine	on
+	SSLCertificateFile	/etc/ssl/certs/clientes.crt
+	SSLCertificateKeyFile	/etc/ssl/certs/clientes.key
 </VirtualHost>

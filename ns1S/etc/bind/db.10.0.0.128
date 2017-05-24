@@ -1,0 +1,28 @@
+$TTL	60000
+@		IN	SOA	ns1S.contatudo.gsr.	root.ns1S.contatudo.gsr. (
+			2017042001 ; serial
+			28 ; refresh
+			14 ; retry
+			3600000 ; expire
+			0 ; negative cache ttl
+			)
+@			IN	NS	ns1S.contatudo.gsr.
+@			IN	NS	ns2S.contatudo.gsr.
+
+129			IN	PTR	routerS.contatudo.gsr.
+130			IN	PTR	pcDiretorS.contatudo.gsr.
+131			IN	PTR	pcContabilistaS.contatudo.gsr.
+132			IN	PTR	pcRHS.contatudo.gsr.
+
+145			IN	PTR	ns1S.contatudo.gsr.
+146			IN	PTR	ns2S.contatudo.gsr.
+147			IN	PTR	proxy.contatudo.gsr.
+148			IN	PTR	routerS.contatudo.gsr.
+
+161			IN	PTR	pcVisitante1L.contatudo.gsr.
+162			IN	PTR	pcVisitante2L.contatudo.gsr.
+171			IN	PTR	routerL.contatudo.gsr.
+
+177			IN	PTR	pcVisitante1P.contatudo.gsr.
+178			IN	PTR	pcVisitante2P.contatudo.gsr.
+187			IN	PTR	routerL.contatudo.gsr.

@@ -6,3 +6,13 @@
         DirectoryIndex index.html
         DocumentRoot /var/www/intranet.contatudo.gsr/
 </VirtualHost>
+
+<Directory /var/www/intranet.contatudo.gsr/>
+	Options Indexes FollowSymLinks MultiViews
+	AllowOverride None
+	Order 	deny,allow
+	Deny from all
+	Allow from 10.0.0.128/26
+	Allow from 192.168.0.0/24
+	Allow from 10.0.2.64/26
+</Directory> 
