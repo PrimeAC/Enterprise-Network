@@ -15,3 +15,43 @@ ip route add 0.0.0.0/0 via 10.0.0.22
 /etc/init.d/dhcp3-server start
 /etc/init.d/zebra start
 /etc/init.d/snmpd start
+
+#out land administrativa
+iptables -A FORWARD -i eth5 -p icpmp --icmp-type echo-reply -j ACCEPT
+iptables -A FORWARD -o eth5 -s 10.0.0.128/28 -j ACCEPT 
+#out lan serv publicos
+iptables -A FORWARD -o eth5 -s 10.0.0.144/28 -j ACCEPT
+#out lan visitantes
+iptables -A FORWARD -o eth5 -s 10.0.0.160/28 -j ACCEPT
+iptables -A FORWARD -o eth5 -s 10.0.0.176/28 -j ACCEPT
+#out ligacoes entre routers
+iptables -A FORWARD -o eth5 -s 10.0.2.64/30 -j ACCEPT
+iptables -A FORWARD -o eth5 -s 10.0.2.68/30 -j ACCEPT
+#in lan visitantes
+iptables -A FORWARD -i eth5 -d 10.0.0.160/28 -j ACCEPT
+iptables -A FORWARD -i eth5 -d 10.0.0.176/28 -j ACCEPT
+#in ligacoes entre routers
+iptables -A FORWARD -i eth5 -d 10.0.2.64/30 -j ACCEPT
+iptables -A FORWARD -i eth5 -d 10.0.2.68/30 -j ACCEPT
+#in ns1S DNS(53) IMAP(25) SMTP(143) SSH(22)
+iptables -A FORWARD -i eth5 -d 10.0.0.145 -p tcp -m multiport --dport 25,53,143,22 -j ACCEPT
+iptables -A FORWARD -i eth5 -d 10.0.0.145 -p udp -m multiport --dport 25,53,143,22 -j ACCEPT
+#in ns2S DNS(53) HTTP(80) HTTPS(443) SSH(22) VPN(1194)
+iptables -A FORWARD -i eth5 -d 10.0.0.146 -p tcp -m multiport --dport 53,80,443,22,1194 -j ACCEPT
+iptables -A FORWARD -i eth5 -d 10.0.0.146 -p udp -m multiport --dport 53,80,443,22,1194 -j ACCEPT
+#in proxyS SSH(22)
+iptables -A FORWARD -i eth5 -d 10.0.0.147 -p tcp -m multiport --dport 22 -j ACCEPT
+iptables -A FORWARD -i eth5 -d 10.0.0.147 -p udp -m multiport --dport 22 -j ACCEPT
+#spoofing
+iptables -A FORWARD -i eth5 -s 10.0.0.128/26 -j DROP
+iptables -A FORWARD -i eth5 -s 10.0.2.64/26 -j DROP
+iptables -A FORWARD -i eth5 -s 192.168.0.0/16 -j DROP
+#bloquear out/in
+iptables -A FORWARD -i eth5 -j DROP
+iptables -A FORWARD -o eth5 -j DROP
+
+
+
+
+
+

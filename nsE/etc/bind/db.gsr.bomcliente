@@ -15,5 +15,5 @@ pcClienteE	IN	A	10.0.0.1
 www		IN	A	10.0.0.2
 
 imap		IN	A	10.0.0.2
-pop			IN	A	10.0.0.2
+pop		IN	A	10.0.0.2
 mail		IN 	A 	10.0.0.2
