@@ -40,6 +40,9 @@ iptables -A FORWARD -i eth5 -d 10.0.2.68/30 -j ACCEPT
 #in ns1S DNS(53) IMAP(25) SMTP(143) SSH(22)
 iptables -A FORWARD -i eth5 -d 10.0.0.145 -p tcp -m multiport --dports 25,53,143,22 -j ACCEPT
 iptables -A FORWARD -i eth5 -d 10.0.0.145 -p udp -m multiport --dports 25,53,143,22 -j ACCEPT
+#in ns2S DNS(53) HTTP(80) HTTPS(443) SSH(22) VPN(1194)
+iptables -A FORWARD -i eth5 -d 10.0.0.146 -p tcp -m multiport --dports 53,80,443,22,1194 -j ACCEPT
+iptables -A FORWARD -i eth5 -d 10.0.0.146 -p udp -m multiport --dports 53,80,443,22,1194 -j ACCEPT
 #in proxyS SSH(22)
 iptables -A FORWARD -i eth5 -d 10.0.0.147 -p tcp -m multiport --dport 22 -j ACCEPT
 iptables -A FORWARD -i eth5 -d 10.0.0.147 -p udp -m multiport --dport 22 -j ACCEPT
