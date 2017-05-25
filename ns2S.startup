@@ -13,7 +13,7 @@ a2enmod ssl
 /etc/init.d/apache2 start
 /etc/init.d/snmpd start
 
-adduser -d /home/user user
+adduser --disabled-password --gecos "" user
 echo 'user:pass' | chpasswd
 
 chmod 700 /home/user/.ssh

@@ -12,7 +12,7 @@ echo 'ftpuser2:pass' | chpasswd
 /etc/init.d/snmpd start
 /etc/init.d/proftpd start
 
-adduser -d /home/user user
+adduser --disabled-password --gecos "" user
 echo 'user:pass' | chpasswd
 
 chmod 700 /home/user/.ssh

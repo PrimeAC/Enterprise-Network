@@ -1,11 +1,11 @@
 ###port 22 is ssh for tcp/udp
 
+##cada comando tem de estar num screen diferente, sao precisos 4 
+
 ##tunel entre monitorS e ns1S
-ssh -L 8080:localhost:22 user@192.168.0.1 -f #server pub
-ssh -L 8080:localhost:8080  user@10.0.0.145  #pc admin
+ssh -L 8080:192.168.0.1:22  user@10.0.0.145  #pc admin
 ssh user@localhost -p 8080   #pc admin
 
 ##tunel entre ficheirosS e ns2S
-ssh -L 8081:localhost:22 user@192.168.0.2 -f #server pub
-ssh -L 8081:localhost:8081	user@10.0.0.146	#pc admin
+ssh -L 8081:192.168.0.2:22	user@10.0.0.146	#pc admin
 ssh user@localhost -p 8081		#pc admin
