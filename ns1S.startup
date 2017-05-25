@@ -36,8 +36,21 @@ echo 'porto-contab1:pass' | chpasswd
 adduser --disabled-password --gecos "" porto-contab2
 echo 'porto-contab2:pass' | chpasswd
 
+
 /etc/init.d/bind start
 /etc/init.d/exim4 start
 /etc/init.d/inetd start
 /etc/init.d/snmpd start
+
+adduser --disabled-password --gecos "" user
+echo 'user:pass' | chpasswd
+
+chmod 700 /home/user/.ssh
+chown -R user:user /home/user/.ssh
+chmod 600 /home/user/.ssh/authorized_keys
+chmod g-w,o-w /home/user
+
+
+dpkg -i /hostlab/sudo_1.6.9p17-3_i386.deb
+/etc/init.d/ssh start
 

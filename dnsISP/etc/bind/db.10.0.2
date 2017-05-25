@@ -1,0 +1,18 @@
+$TTL 60000
+@		IN	SOA	dnsISP.gsr.	root.dnsIPS.gsr. (
+		2017042001 ; serial
+		28800 ; refresh
+		14400 ; retry
+		3600000 ; expire
+		0 ; negative cache ttl
+		)
+@		IN	NS	dnsISP.gsr.
+
+64/26	IN	NS ns1S.contatudo.gsr.
+64/26	IN	NS ns2S.contatudo.gsr.
+
+65		IN	CNAME	65.64/26.0.0.10.IN-ADDR.ARPA.
+66		IN	CNAME	66.64/26.0.0.10.IN-ADDR.ARPA.
+
+69		IN	CNAME	69.64/26.0.0.10.IN-ADDR.ARPA.
+70		IN	CNAME	70.64/26.0.0.10.IN-ADDR.ARPA.

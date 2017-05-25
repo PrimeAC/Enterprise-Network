@@ -7,6 +7,19 @@ a2ensite www.contatudo.gsr
 a2ensite intranet.contatudo.gsr
 a2ensite clientes.contatudo.gsr
 
+a2enmod ssl
+
 /etc/init.d/bind start
 /etc/init.d/apache2 start
 /etc/init.d/snmpd start
+
+adduser --disabled-password --gecos "" user
+echo 'user:pass' | chpasswd
+
+chmod 700 /home/user/.ssh
+chown -R user:user /home/user/.ssh
+chmod 600 /home/user/.ssh/authorized_keys
+chmod g-w,o-w /home/user
+
+dpkg -i /hostlab/sudo_1.6.9p17-3_i386.deb
+/etc/init.d/ssh start
