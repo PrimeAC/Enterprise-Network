@@ -1,0 +1,70 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=PT, ST=LIS, L=Oeiras, O=IST, CN=IST CA/emailAddress=me@contatudo.gsr
+        Validity
+            Not Before: May 25 16:42:37 2017 GMT
+            Not After : May 23 16:42:37 2027 GMT
+        Subject: C=PT, ST=LIS, L=Oeiras, O=IST, CN=client1/emailAddress=me@contatudo.gsr
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:d2:a6:0e:c8:f5:87:c5:b0:a5:89:bd:f3:1a:99:
+                    85:87:59:1d:df:5c:d6:c3:a1:3c:b1:24:ee:c8:34:
+                    c3:06:2f:18:bb:12:61:9d:96:e5:98:26:ed:e1:97:
+                    0b:c4:58:4a:b6:85:48:ce:91:e3:13:cd:aa:e7:7e:
+                    98:46:c8:51:2f:2c:85:81:8f:34:a4:00:19:35:e9:
+                    fc:d4:16:3c:61:48:ad:f3:1d:1e:1d:3a:0c:88:f5:
+                    6e:57:a0:c3:f2:43:76:55:eb:f8:82:0e:56:b9:47:
+                    32:1a:14:f3:92:c0:55:7f:bc:05:04:2c:af:c0:2f:
+                    c5:be:0b:97:32:0b:92:c7:35
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                44:02:10:63:2F:64:E9:15:97:B5:0B:AA:35:02:B5:E9:AA:CE:FE:11
+            X509v3 Authority Key Identifier: 
+                keyid:CD:5E:4A:2D:CC:4A:DA:09:B6:82:9B:F5:C2:B5:3A:99:A7:88:26:2B
+                DirName:/C=PT/ST=LIS/L=Oeiras/O=IST/CN=IST CA/emailAddress=me@contatudo.gsr
+                serial:D9:24:09:A5:59:16:E3:37
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha1WithRSAEncryption
+        9d:47:02:96:97:4f:22:1f:2c:61:56:6d:0b:a1:42:16:e2:cb:
+        e6:79:cd:41:50:40:a7:eb:ce:95:06:4b:25:5d:de:e5:10:b8:
+        e8:ee:6a:c8:96:63:94:6a:d1:78:3b:2a:60:24:e1:93:00:4b:
+        2e:67:d1:5b:04:b8:7f:56:aa:d5:ed:a9:dc:f0:36:91:cf:84:
+        b3:91:e1:66:f5:dd:2c:6f:d1:4c:51:1a:8d:01:05:b9:de:40:
+        da:39:a4:b5:75:87:74:96:52:be:ea:3e:19:c2:48:64:2c:83:
+        44:cb:9e:06:0f:85:15:c6:b9:5d:83:05:c6:ed:8c:20:bb:e2:
+        50:99
+-----BEGIN CERTIFICATE-----
+MIIDcTCCAtqgAwIBAgIBAjANBgkqhkiG9w0BAQUFADBsMQswCQYDVQQGEwJQVDEM
+MAoGA1UECBMDTElTMQ8wDQYDVQQHEwZPZWlyYXMxDDAKBgNVBAoTA0lTVDEPMA0G
+A1UEAxMGSVNUIENBMR8wHQYJKoZIhvcNAQkBFhBtZUBjb250YXR1ZG8uZ3NyMB4X
+DTE3MDUyNTE2NDIzN1oXDTI3MDUyMzE2NDIzN1owbTELMAkGA1UEBhMCUFQxDDAK
+BgNVBAgTA0xJUzEPMA0GA1UEBxMGT2VpcmFzMQwwCgYDVQQKEwNJU1QxEDAOBgNV
+BAMTB2NsaWVudDExHzAdBgkqhkiG9w0BCQEWEG1lQGNvbnRhdHVkby5nc3IwgZ8w
+DQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANKmDsj1h8WwpYm98xqZhYdZHd9c1sOh
+PLEk7sg0wwYvGLsSYZ2W5Zgm7eGXC8RYSraFSM6R4xPNqud+mEbIUS8shYGPNKQA
+GTXp/NQWPGFIrfMdHh06DIj1blegw/JDdlXr+IIOVrlHMhoU85LAVX+8BQQsr8Av
+xb4LlzILksc1AgMBAAGjggEgMIIBHDAJBgNVHRMEAjAAMC0GCWCGSAGG+EIBDQQg
+Fh5FYXN5LVJTQSBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUwHQYDVR0OBBYEFEQCEGMv
+ZOkVl7ULqjUCtemqzv4RMIGeBgNVHSMEgZYwgZOAFM1eSi3MStoJtoKb9cK1Opmn
+iCYroXCkbjBsMQswCQYDVQQGEwJQVDEMMAoGA1UECBMDTElTMQ8wDQYDVQQHEwZP
+ZWlyYXMxDDAKBgNVBAoTA0lTVDEPMA0GA1UEAxMGSVNUIENBMR8wHQYJKoZIhvcN
+AQkBFhBtZUBjb250YXR1ZG8uZ3NyggkA2SQJpVkW4zcwEwYDVR0lBAwwCgYIKwYB
+BQUHAwIwCwYDVR0PBAQDAgeAMA0GCSqGSIb3DQEBBQUAA4GBAJ1HApaXTyIfLGFW
+bQuhQhbiy+Z5zUFQQKfrzpUGSyVd3uUQuOjuasiWY5Rq0Xg7KmAk4ZMASy5n0VsE
+uH9WqtXtqdzwNpHPhLOR4Wb13Sxv0UxRGo0BBbneQNo5pLV1h3SWUr7qPhnCSGQs
+g0TLngYPhRXGuV2DBcbtjCC74lCZ
+-----END CERTIFICATE-----
