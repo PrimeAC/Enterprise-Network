@@ -36,8 +36,8 @@ iptables -A FORWARD -i eth5 -s 192.168.0.0/16 -j DROP
 iptables -A FORWARD -i eth5 -d 10.0.0.160/28 -j ACCEPT
 iptables -A FORWARD -i eth5 -d 10.0.0.176/28 -j ACCEPT
 #in ligacoes entre routers
-iptables -A FORWARD -i eth5 -d 10.0.2.64/30 -j ACCEPT
-iptables -A FORWARD -i eth5 -d 10.0.2.68/30 -j ACCEPT
+#iptables -A FORWARD -i eth5 -d 10.0.2.64/30 -j ACCEPT
+#iptables -A FORWARD -i eth5 -d 10.0.2.68/30 -j ACCEPT
 #in ns1S DNS(53) IMAP(25) SMTP(143) SSH(22)
 iptables -A FORWARD -i eth5 -d 10.0.0.145 -p tcp -m multiport --dports 25,53,143,22 -j ACCEPT
 iptables -A FORWARD -i eth5 -d 10.0.0.145 -p udp -m multiport --dports 25,53,143,22 -j ACCEPT

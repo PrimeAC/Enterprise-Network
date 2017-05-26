@@ -6,4 +6,7 @@ chmod 700 /root/.ssh
 chmod 700 /root/.ssh/id_rsa
 chmod 644 /root/.ssh/id_rsa.pub
 
+chmod 700 /root/tunelFicheiros
+chmod 700 /root/tunelMonitor
+
 dpkg -i openresolv_3.5.2-1_all.deb
